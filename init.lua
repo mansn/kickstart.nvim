@@ -167,8 +167,8 @@ vim.o.scrolloff = 10
 vim.o.confirm = true
 
 -- tab settings
-vim.opt.tabstop = 4 -- Number of visual spaces per TAB
-vim.opt.shiftwidth = 4 -- Number of spaces for indentation
+vim.opt.tabstop = 2 -- Number of visual spaces per TAB
+vim.opt.shiftwidth = 2 -- Number of spaces for indentation
 vim.opt.expandtab = true -- Use spaces instead of tabs
 
 -- [[ Basic Keymaps ]]
