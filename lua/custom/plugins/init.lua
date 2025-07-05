@@ -3,6 +3,19 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-  'ThePrimeagen/vim-be-good',
-  cmd = 'VimBeGood',
+  {
+    'ThePrimeagen/vim-be-good',
+    cmd = 'VimBeGood',
+  },
+  {
+    'sphamba/smear-cursor.nvim',
+    opts = {},
+  },
+  {
+    'karb94/neoscroll.nvim',
+    opts = {},
+  },
+  {
+    'tpope/vim-fugitive',
+  },
 }
