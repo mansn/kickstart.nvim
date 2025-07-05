@@ -413,7 +413,7 @@ require('lazy').setup({
         --  All the info you're looking for is in `:help telescope.setup()`
         --
         defaults = {
-          layout_config = { height = 0.95, width = 0.95 },
+          layout_config = { height = 0.95, width = 0.95, preview_cutoff = 120, preview_width = 0.65 },
         },
         -- },
         -- pickers = {}
@@ -775,6 +775,8 @@ require('lazy').setup({
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
+        typescript = { 'eslint_d', 'prettierd' },
+        typescriptreact = { 'eslint_d', 'prettierd' },
       },
     },
   },
@@ -857,6 +859,7 @@ require('lazy').setup({
 
       sources = {
         default = { 'lsp', 'path', 'snippets', 'lazydev' },
+        custom = { 'copilot' },
         providers = {
           lazydev = { module = 'lazydev.integrations.blink', score_offset = 100 },
         },
